@@ -14,6 +14,7 @@ public class IOServiceImpl implements IOService{
 
     public IOServiceImpl(@Value("#{T(java.lang.System).in}") InputStream inputStream) {
         this.reader = new BufferedReader(new InputStreamReader(inputStream));
+        System.out.println("Bean IOServiceImpl");
     }
 
     @SneakyThrows
